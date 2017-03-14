@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TTr-Gm-kmq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PTk-vM-gBb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,13 +8,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Product-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_Challenge_5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_Challenge_5" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rlM-ya-uW0"/>
                         <viewControllerLayoutGuide type="bottom" id="o5T-l4-LEm"/>
@@ -23,18 +24,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCX-NJ-jPh">
-                                <rect key="frame" x="-20" y="8" width="415" height="934"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCX-NJ-jPh">
+                                <rect key="frame" x="0.0" y="8" width="375" height="942"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iT0-yh-OtW" customClass="ImageScroll" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="36" y="20" width="343" height="250"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="250" id="tPJ-AD-MBT"/>
-                                        </constraints>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uD-Zp-756" customClass="EnterButton" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="36" y="330" width="343" height="44"/>
+                                        <rect key="frame" x="20" y="394" width="341" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="ojM-AU-okE"/>
                                         </constraints>
@@ -44,74 +38,74 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累積經驗值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wf-0D-gsO" customClass="LabelStyle" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="36" y="382" width="87" height="21"/>
+                                        <rect key="frame" x="20" y="446" width="87" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.42699999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="r5I-OY-MJw">
-                                        <rect key="frame" x="36" y="454" width="343" height="2"/>
+                                        <rect key="frame" x="20" y="518" width="341" height="2"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="427" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNC-VX-2dx">
-                                        <rect key="frame" x="93" y="418" width="30" height="21"/>
+                                        <rect key="frame" x="77" y="482" width="30" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1j-eR-HOC">
-                                        <rect key="frame" x="133" y="418" width="6" height="21"/>
+                                        <rect key="frame" x="117" y="482" width="6" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8O-59-xre">
-                                        <rect key="frame" x="149" y="418" width="39" height="21"/>
+                                        <rect key="frame" x="133" y="482" width="39" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZQ-g6-1cd" customClass="LabelStyle" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="133" y="382" width="6" height="21"/>
+                                        <rect key="frame" x="117" y="446" width="6" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="升級需要經驗值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-zO-peo" customClass="LabelStyle" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="149" y="382" width="122" height="21"/>
+                                        <rect key="frame" x="133" y="446" width="122" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button.png" translatesAutoresizingMaskIntoConstraints="NO" id="OuQ-Px-qKc">
-                                        <rect key="frame" x="36" y="476" width="160" height="44"/>
+                                        <rect key="frame" x="20" y="540" width="160" height="44"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPv-BW-4U7" customClass="EnterButton" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="204" y="476" width="175" height="44"/>
+                                        <rect key="frame" x="188" y="540" width="173" height="44"/>
                                         <state key="normal" title="立即挑戰"/>
                                         <connections>
                                             <action selector="challengeNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yML-FO-HGA"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8v2-da-UAI" customClass="LabelStyle" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="112" y="488" width="8" height="21"/>
+                                        <rect key="frame" x="96" y="552" width="8" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTD-WM-Rbl">
-                                        <rect key="frame" x="141" y="476" width="55" height="44"/>
+                                        <rect key="frame" x="125" y="540" width="55" height="44"/>
                                         <connections>
                                             <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHw-ZK-OdR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLQ-fM-IAj">
-                                        <rect key="frame" x="36" y="476" width="55" height="44"/>
+                                        <rect key="frame" x="20" y="540" width="55" height="44"/>
                                         <connections>
                                             <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yg0-Q8-Bgt"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sby-6y-uVl" customClass="ChallengeProfile" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                        <rect key="frame" x="36" y="544" width="343" height="300"/>
+                                        <rect key="frame" x="20" y="608" width="341" height="300"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="參賽者編號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REr-F1-pJx" customClass="LabelStyle" customModule="IOS_Challenge_5" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="30" width="77" height="18"/>
@@ -132,7 +126,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100002" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-wg-BEA" customClass="LabelStyle" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="30" width="53" height="18"/>
+                                                <rect key="frame" x="107" y="30" width="52.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -150,7 +144,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nf7-xu-8Yf" customClass="lightButton" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                                <rect key="frame" x="51" y="137" width="240" height="44"/>
+                                                <rect key="frame" x="51" y="137" width="238" height="44"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="查看挑戰情況"/>
                                                 <connections>
@@ -158,14 +152,14 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rcw-Bo-Z90">
-                                                <rect key="frame" x="222" y="27" width="113" height="90"/>
+                                                <rect key="frame" x="220" y="27" width="113" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="0zd-S5-A3w"/>
                                                     <constraint firstAttribute="width" constant="113" id="FWe-uq-zoS"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqA-XN-6l8" customClass="StageChooseBackground" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                                <rect key="frame" x="51" y="202" width="240" height="44"/>
+                                                <rect key="frame" x="51" y="202" width="238" height="44"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F3-vg-jrn">
                                                         <rect key="frame" x="20" y="0.0" width="46" height="44"/>
@@ -179,7 +173,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-BI-9c4">
-                                                        <rect key="frame" x="174" y="0.0" width="46" height="44"/>
+                                                        <rect key="frame" x="172" y="0.0" width="46" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="46" id="jzW-ln-S7H"/>
                                                         </constraints>
@@ -205,35 +199,44 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="0el-V1-Qnq"/>
+                                            <constraint firstItem="REr-F1-pJx" firstAttribute="top" secondItem="sby-6y-uVl" secondAttribute="top" constant="30" id="2E1-8g-yt2"/>
+                                            <constraint firstItem="REr-F1-pJx" firstAttribute="trailing" secondItem="BTk-ch-NBx" secondAttribute="trailing" id="3mh-hw-ppb"/>
                                             <constraint firstItem="iP3-vs-MtW" firstAttribute="leading" secondItem="iZX-wg-BEA" secondAttribute="leading" id="6QI-rR-MeL"/>
-                                            <constraint firstItem="OBu-jl-jJN" firstAttribute="centerY" secondItem="kGJ-QQ-BY8" secondAttribute="centerY" id="9EW-Gb-qLI"/>
+                                            <constraint firstItem="BTk-ch-NBx" firstAttribute="baseline" secondItem="iP3-vs-MtW" secondAttribute="baseline" id="9L9-vx-qaH"/>
                                             <constraint firstItem="OBu-jl-jJN" firstAttribute="leading" secondItem="iP3-vs-MtW" secondAttribute="leading" id="HA5-Rv-daq"/>
+                                            <constraint firstItem="REr-F1-pJx" firstAttribute="baseline" secondItem="iZX-wg-BEA" secondAttribute="baseline" id="Jn9-tr-FUI"/>
                                             <constraint firstItem="TqA-XN-6l8" firstAttribute="leading" secondItem="sby-6y-uVl" secondAttribute="leading" constant="51" id="KCf-nq-Yeh"/>
-                                            <constraint firstItem="iP3-vs-MtW" firstAttribute="centerY" secondItem="BTk-ch-NBx" secondAttribute="centerY" id="KlH-oB-CJW"/>
-                                            <constraint firstItem="iZX-wg-BEA" firstAttribute="centerY" secondItem="REr-F1-pJx" secondAttribute="centerY" id="LKx-xL-IjK"/>
+                                            <constraint firstItem="kGJ-QQ-BY8" firstAttribute="baseline" secondItem="OBu-jl-jJN" secondAttribute="baseline" id="LzE-4d-8BA"/>
+                                            <constraint firstItem="BTk-ch-NBx" firstAttribute="top" secondItem="REr-F1-pJx" secondAttribute="bottom" constant="15" id="PGm-Qo-QCz"/>
                                             <constraint firstItem="TqA-XN-6l8" firstAttribute="centerX" secondItem="sby-6y-uVl" secondAttribute="centerX" id="POx-eA-Fe3"/>
+                                            <constraint firstItem="REr-F1-pJx" firstAttribute="leading" secondItem="sby-6y-uVl" secondAttribute="leading" constant="15" id="PvO-Yo-J7f"/>
                                             <constraint firstItem="TqA-XN-6l8" firstAttribute="top" secondItem="nf7-xu-8Yf" secondAttribute="bottom" constant="21" id="RLj-E9-cNs"/>
+                                            <constraint firstItem="kGJ-QQ-BY8" firstAttribute="top" secondItem="BTk-ch-NBx" secondAttribute="bottom" constant="8" symbolic="YES" id="UAc-qn-oBL"/>
                                             <constraint firstAttribute="bottom" secondItem="TqA-XN-6l8" secondAttribute="bottom" constant="54" id="WY8-Sf-fdH"/>
-                                            <constraint firstItem="kGJ-QQ-BY8" firstAttribute="top" secondItem="BTk-ch-NBx" secondAttribute="bottom" constant="8" symbolic="YES" id="cQe-3C-7bO"/>
-                                            <constraint firstItem="REr-F1-pJx" firstAttribute="top" secondItem="sby-6y-uVl" secondAttribute="top" constant="30" id="gCj-hi-Shf"/>
-                                            <constraint firstItem="iZX-wg-BEA" firstAttribute="leading" secondItem="REr-F1-pJx" secondAttribute="trailing" constant="15" id="gbr-Xw-3Qy"/>
-                                            <constraint firstItem="kGJ-QQ-BY8" firstAttribute="trailing" secondItem="BTk-ch-NBx" secondAttribute="trailing" id="jzG-Kd-dLa"/>
-                                            <constraint firstItem="REr-F1-pJx" firstAttribute="leading" secondItem="sby-6y-uVl" secondAttribute="leading" constant="15" id="kgH-Bi-qgz"/>
                                             <constraint firstItem="TqA-XN-6l8" firstAttribute="trailing" secondItem="nf7-xu-8Yf" secondAttribute="trailing" id="krx-S9-DhX"/>
-                                            <constraint firstItem="rcw-Bo-Z90" firstAttribute="leading" secondItem="iZX-wg-BEA" secondAttribute="trailing" constant="62" id="lJZ-Qo-3Ey"/>
+                                            <constraint firstItem="iZX-wg-BEA" firstAttribute="leading" secondItem="REr-F1-pJx" secondAttribute="trailing" constant="15" id="olI-lT-ptd"/>
                                             <constraint firstItem="TqA-XN-6l8" firstAttribute="top" secondItem="sby-6y-uVl" secondAttribute="top" constant="202" id="qc0-T7-ug9"/>
                                             <constraint firstItem="nf7-xu-8Yf" firstAttribute="top" secondItem="OBu-jl-jJN" secondAttribute="bottom" constant="30" id="r6X-a8-BSB"/>
-                                            <constraint firstItem="BTk-ch-NBx" firstAttribute="trailing" secondItem="REr-F1-pJx" secondAttribute="trailing" id="sU4-JP-u2x"/>
                                             <constraint firstItem="rcw-Bo-Z90" firstAttribute="centerY" secondItem="iP3-vs-MtW" secondAttribute="centerY" id="t3V-9A-Amt"/>
                                             <constraint firstItem="rcw-Bo-Z90" firstAttribute="trailing" secondItem="sby-6y-uVl" secondAttribute="trailingMargin" id="u2d-3s-kjF"/>
-                                            <constraint firstItem="BTk-ch-NBx" firstAttribute="top" secondItem="REr-F1-pJx" secondAttribute="bottom" constant="15" id="v2D-V2-p4X"/>
                                             <constraint firstItem="TqA-XN-6l8" firstAttribute="leading" secondItem="nf7-xu-8Yf" secondAttribute="leading" id="w5k-CF-n99"/>
+                                            <constraint firstItem="kGJ-QQ-BY8" firstAttribute="leading" secondItem="sby-6y-uVl" secondAttribute="leading" constant="30" id="xMV-lD-b44"/>
+                                            <constraint firstItem="BTk-ch-NBx" firstAttribute="trailing" secondItem="kGJ-QQ-BY8" secondAttribute="trailing" id="zq4-x8-84e"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iT0-yh-OtW" customClass="ImageScroll" customModule="IOS_Challenge_5" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="84" width="341" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="tPJ-AD-MBT"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="iT0-yh-OtW" firstAttribute="width" secondItem="bCX-NJ-jPh" secondAttribute="width" multiplier="1:1.1" id="1jg-F9-8cC"/>
                                     <constraint firstItem="hLQ-fM-IAj" firstAttribute="centerY" secondItem="8v2-da-UAI" secondAttribute="centerY" id="4BV-oh-vST"/>
                                     <constraint firstItem="5Wf-0D-gsO" firstAttribute="trailing" secondItem="FNC-VX-2dx" secondAttribute="trailing" id="6gb-mP-Bbp"/>
+                                    <constraint firstItem="hLQ-fM-IAj" firstAttribute="baseline" secondItem="yTD-WM-Rbl" secondAttribute="baseline" id="6yk-Iy-xQF"/>
                                     <constraint firstItem="hLQ-fM-IAj" firstAttribute="firstBaseline" secondItem="yTD-WM-Rbl" secondAttribute="firstBaseline" id="9c3-oM-Vgm"/>
                                     <constraint firstItem="fPv-BW-4U7" firstAttribute="leading" secondItem="OuQ-Px-qKc" secondAttribute="trailing" constant="8" symbolic="YES" id="Af7-j2-bNo"/>
                                     <constraint firstItem="FNC-VX-2dx" firstAttribute="top" secondItem="5Wf-0D-gsO" secondAttribute="bottom" constant="15" id="D1U-HR-3X4"/>
@@ -243,21 +246,22 @@
                                     <constraint firstItem="sby-6y-uVl" firstAttribute="leading" secondItem="iT0-yh-OtW" secondAttribute="leading" id="Fic-ky-3vT"/>
                                     <constraint firstItem="sby-6y-uVl" firstAttribute="top" secondItem="hLQ-fM-IAj" secondAttribute="bottom" constant="24" id="FxW-PF-MEd"/>
                                     <constraint firstItem="g8O-59-xre" firstAttribute="centerX" secondItem="yTD-WM-Rbl" secondAttribute="centerX" id="GGU-Du-VTe"/>
+                                    <constraint firstAttribute="trailing" secondItem="iT0-yh-OtW" secondAttribute="trailing" constant="20" symbolic="YES" id="Gbn-j8-Uqs"/>
                                     <constraint firstItem="4c0-zO-peo" firstAttribute="leading" secondItem="MZQ-g6-1cd" secondAttribute="trailing" constant="10" id="Gz9-hp-txu"/>
                                     <constraint firstItem="yTD-WM-Rbl" firstAttribute="baseline" secondItem="hLQ-fM-IAj" secondAttribute="baseline" id="HEV-la-vYb"/>
                                     <constraint firstItem="r5I-OY-MJw" firstAttribute="top" secondItem="FNC-VX-2dx" secondAttribute="bottom" constant="15" id="Iva-aY-ahn"/>
                                     <constraint firstItem="5Wf-0D-gsO" firstAttribute="top" secondItem="0uD-Zp-756" secondAttribute="bottom" constant="8" symbolic="YES" id="JzY-FD-Y4t"/>
                                     <constraint firstItem="8v2-da-UAI" firstAttribute="leading" secondItem="hLQ-fM-IAj" secondAttribute="trailing" constant="21" id="MRM-06-5QY"/>
+                                    <constraint firstItem="iT0-yh-OtW" firstAttribute="top" secondItem="bCX-NJ-jPh" secondAttribute="top" constant="84" id="OYL-kS-ELY"/>
                                     <constraint firstItem="OuQ-Px-qKc" firstAttribute="top" secondItem="yTD-WM-Rbl" secondAttribute="top" id="Oll-qW-gzK"/>
+                                    <constraint firstItem="yTD-WM-Rbl" firstAttribute="firstBaseline" secondItem="hLQ-fM-IAj" secondAttribute="firstBaseline" id="PG4-07-Su9"/>
                                     <constraint firstItem="yTD-WM-Rbl" firstAttribute="bottom" secondItem="fPv-BW-4U7" secondAttribute="bottom" id="Q4S-iT-b1Q"/>
                                     <constraint firstItem="MZQ-g6-1cd" firstAttribute="leading" secondItem="5Wf-0D-gsO" secondAttribute="trailing" constant="10" id="Sqj-9w-oIf"/>
                                     <constraint firstItem="OuQ-Px-qKc" firstAttribute="centerX" secondItem="8v2-da-UAI" secondAttribute="centerX" id="Tq5-rn-BZd"/>
                                     <constraint firstItem="iT0-yh-OtW" firstAttribute="leading" secondItem="0uD-Zp-756" secondAttribute="leading" id="UOz-fi-NMa"/>
                                     <constraint firstItem="hLQ-fM-IAj" firstAttribute="top" secondItem="yTD-WM-Rbl" secondAttribute="top" id="Unb-6U-O5F"/>
-                                    <constraint firstAttribute="trailing" secondItem="iT0-yh-OtW" secondAttribute="trailing" constant="36" id="VdP-QF-7oA"/>
                                     <constraint firstItem="iT0-yh-OtW" firstAttribute="trailing" secondItem="0uD-Zp-756" secondAttribute="trailing" id="ZOL-0o-d6i"/>
                                     <constraint firstItem="5Wf-0D-gsO" firstAttribute="baseline" secondItem="MZQ-g6-1cd" secondAttribute="baseline" id="a2b-Co-7jp"/>
-                                    <constraint firstAttribute="bottom" secondItem="sby-6y-uVl" secondAttribute="bottom" constant="160" id="aDE-ym-yHJ"/>
                                     <constraint firstItem="sby-6y-uVl" firstAttribute="width" secondItem="iT0-yh-OtW" secondAttribute="width" id="aV3-Ha-zYH"/>
                                     <constraint firstItem="0uD-Zp-756" firstAttribute="top" secondItem="iT0-yh-OtW" secondAttribute="bottom" constant="60" id="aY7-Oo-zb8"/>
                                     <constraint firstItem="0uD-Zp-756" firstAttribute="trailing" secondItem="r5I-OY-MJw" secondAttribute="trailing" id="b94-qN-9Lv"/>
@@ -267,28 +271,30 @@
                                     <constraint firstItem="5Wf-0D-gsO" firstAttribute="leading" secondItem="r5I-OY-MJw" secondAttribute="leading" id="e3q-up-2iX"/>
                                     <constraint firstItem="OuQ-Px-qKc" firstAttribute="bottom" secondItem="hLQ-fM-IAj" secondAttribute="bottom" id="hF8-aE-o8m"/>
                                     <constraint firstItem="yTD-WM-Rbl" firstAttribute="baseline" secondItem="hLQ-fM-IAj" secondAttribute="baseline" id="hXn-Rc-d64"/>
-                                    <constraint firstItem="iT0-yh-OtW" firstAttribute="top" secondItem="bCX-NJ-jPh" secondAttribute="top" constant="20" id="hkf-nN-tU8"/>
                                     <constraint firstItem="r5I-OY-MJw" firstAttribute="leading" secondItem="hLQ-fM-IAj" secondAttribute="leading" id="i9H-nl-EG8"/>
                                     <constraint firstItem="sby-6y-uVl" firstAttribute="centerX" secondItem="r5I-OY-MJw" secondAttribute="centerX" id="j08-3F-WIS"/>
+                                    <constraint firstAttribute="bottom" secondItem="sby-6y-uVl" secondAttribute="bottom" constant="34" id="mJN-88-hYA"/>
                                     <constraint firstItem="hLQ-fM-IAj" firstAttribute="firstBaseline" secondItem="yTD-WM-Rbl" secondAttribute="firstBaseline" id="mvl-rH-Ie5"/>
                                     <constraint firstItem="0uD-Zp-756" firstAttribute="leading" secondItem="5Wf-0D-gsO" secondAttribute="leading" id="nK4-qd-nAV"/>
                                     <constraint firstItem="4c0-zO-peo" firstAttribute="leading" secondItem="g8O-59-xre" secondAttribute="leading" id="oAq-NK-OYj"/>
-                                    <constraint firstItem="iT0-yh-OtW" firstAttribute="leading" secondItem="bCX-NJ-jPh" secondAttribute="leading" constant="36" id="odk-Ks-N2Q"/>
+                                    <constraint firstItem="yTD-WM-Rbl" firstAttribute="baseline" secondItem="hLQ-fM-IAj" secondAttribute="baseline" id="p1m-vk-hGe"/>
                                     <constraint firstItem="fPv-BW-4U7" firstAttribute="leading" secondItem="yTD-WM-Rbl" secondAttribute="trailing" constant="8" symbolic="YES" id="pO3-LC-Epk"/>
                                     <constraint firstItem="OuQ-Px-qKc" firstAttribute="bottom" secondItem="yTD-WM-Rbl" secondAttribute="bottom" id="rEa-fW-lkS"/>
                                     <constraint firstItem="G1j-eR-HOC" firstAttribute="baseline" secondItem="g8O-59-xre" secondAttribute="baseline" id="sEi-tI-TWg"/>
                                     <constraint firstItem="hLQ-fM-IAj" firstAttribute="top" secondItem="r5I-OY-MJw" secondAttribute="bottom" constant="20" id="sKW-73-r88"/>
                                     <constraint firstItem="r5I-OY-MJw" firstAttribute="trailing" secondItem="fPv-BW-4U7" secondAttribute="trailing" id="uji-Qs-fox"/>
+                                    <constraint firstItem="yTD-WM-Rbl" firstAttribute="firstBaseline" secondItem="hLQ-fM-IAj" secondAttribute="firstBaseline" id="vIc-ge-lnY"/>
                                     <constraint firstItem="yTD-WM-Rbl" firstAttribute="baseline" secondItem="hLQ-fM-IAj" secondAttribute="baseline" id="yYl-wa-pd8"/>
+                                    <constraint firstItem="iT0-yh-OtW" firstAttribute="leading" secondItem="bCX-NJ-jPh" secondAttribute="leading" constant="20" symbolic="YES" id="zX9-AR-LBz"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bCX-NJ-jPh" firstAttribute="leading" secondItem="XDr-2u-J6R" secondAttribute="leadingMargin" constant="-36" id="Io4-Wq-4am"/>
-                            <constraint firstItem="bCX-NJ-jPh" firstAttribute="centerX" secondItem="XDr-2u-J6R" secondAttribute="centerX" id="aRq-uc-Y4U"/>
-                            <constraint firstItem="bCX-NJ-jPh" firstAttribute="top" secondItem="XDr-2u-J6R" secondAttribute="topMargin" constant="8" id="tE2-Sd-J9b"/>
-                            <constraint firstItem="o5T-l4-LEm" firstAttribute="top" secondItem="bCX-NJ-jPh" secondAttribute="bottom" constant="8" symbolic="YES" id="wzA-Km-N3s"/>
+                            <constraint firstAttribute="trailing" secondItem="bCX-NJ-jPh" secondAttribute="trailing" id="6dv-Yh-Ukp"/>
+                            <constraint firstItem="bCX-NJ-jPh" firstAttribute="top" secondItem="XDr-2u-J6R" secondAttribute="topMargin" constant="8" id="DUd-st-gTe"/>
+                            <constraint firstItem="bCX-NJ-jPh" firstAttribute="leading" secondItem="XDr-2u-J6R" secondAttribute="leading" id="hHn-DU-txd"/>
+                            <constraint firstItem="bCX-NJ-jPh" firstAttribute="bottom" secondItem="o5T-l4-LEm" secondAttribute="top" id="qiv-w1-LCh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Product" id="kcy-9R-aoa"/>
@@ -305,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2935.1999999999998" y="9.4452773613193415"/>
+            <point key="canvasLocation" x="2935.1999999999998" y="8.995502248875562"/>
         </scene>
         <!--In Collection View-->
         <scene sceneID="Se5-tQ-9ym">
@@ -361,7 +367,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmW-gc-U0i" customClass="EnterButton" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                                    <rect key="frame" x="4" y="6" width="355" height="44"/>
+                                                    <rect key="frame" x="4" y="6" width="367" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="Xe0-am-gM5"/>
                                                     </constraints>
@@ -377,7 +383,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.42699998617172241" translatesAutoresizingMaskIntoConstraints="NO" id="jXc-tM-TtY">
-                                                    <rect key="frame" x="4" y="130" width="355" height="2"/>
+                                                    <rect key="frame" x="4" y="130" width="367" height="2"/>
                                                 </progressView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="427" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzl-iW-Vhn">
                                                     <rect key="frame" x="61" y="94" width="30" height="21"/>
@@ -413,7 +419,7 @@
                                                     <rect key="frame" x="4" y="152" width="160" height="44"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfn-bO-k5C" customClass="EnterButton" customModule="IOS_Challenge_5" customModuleProvider="target">
-                                                    <rect key="frame" x="172" y="152" width="187" height="44"/>
+                                                    <rect key="frame" x="172" y="152" width="199" height="44"/>
                                                     <state key="normal" title="立即挑戰"/>
                                                     <connections>
                                                         <action selector="challengeNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOy-AV-T0g"/>
@@ -747,7 +753,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="950"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="g1N-5T-ruP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g1N-5T-ruP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
